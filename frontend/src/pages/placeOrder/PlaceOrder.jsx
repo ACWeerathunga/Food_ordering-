@@ -132,9 +132,9 @@ const PlaceOrder = () => {
         </form>
         <div className="order-summary">
           <h2>Order Summary</h2>
-          <div className="summary-row"><span>Subtotal:</span><span>₹{subtotal.toFixed(2)}</span></div>
-          <div className="summary-row"><span>Delivery Fee:</span><span>₹{deliveryFee.toFixed(2)}</span></div>
-          <div className="summary-row total"><span>Total:</span><span>₹{total.toFixed(2)}</span></div>
+          <div className="summary-row"><span>Subtotal:</span><span>Rs:{subtotal.toFixed(2)}</span></div>
+          <div className="summary-row"><span>Delivery Fee:</span><span>Rs:{deliveryFee.toFixed(2)}</span></div>
+          <div className="summary-row total"><span>Total:</span><span>Rs:{total.toFixed(2)}</span></div>
         </div>
       </div>
     </div>
