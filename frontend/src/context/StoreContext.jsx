@@ -57,9 +57,8 @@ const StoreContextProvider = (props) => {
   };
 
   const contextValue = {
-    products, // Replace food_list with products
+    products,
     cartItems,
-    setCartItems,
     setCartItems,
     addToCart,
     removeFromCart,
