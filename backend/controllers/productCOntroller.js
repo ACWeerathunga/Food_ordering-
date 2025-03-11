@@ -50,10 +50,10 @@ export const getAllProducts = async (req, res) => {
     }
 };
 
-// Get a product by ID (Replaced findById with findOne)
+// Get a product by ID
 export const getProductById = async (req, res) => {
     try {
-        const product = await Product.findOne({ productId: req.params.productId });
+        const product = await Product.findById(req.params.productId);
         if (!product) {
             return res.status(404).json({ success: false, message: 'Product not found' });
         }
@@ -64,7 +64,7 @@ export const getProductById = async (req, res) => {
     }
 };
 
-// Update a product (Replaced findByIdAndUpdate with findOneAndUpdate)
+// Update a product
 export const updateProduct = async (req, res) => {
     try {
         let updateData = {
@@ -78,8 +78,8 @@ export const updateProduct = async (req, res) => {
             updateData.image = req.file.filename;
         }
 
-        const product = await Product.findOneAndUpdate(
-            { productId: req.params.productId },
+        const product = await Product.findByIdAndUpdate(
+            req.params.productId,
             updateData,
             { new: true }
         );
@@ -99,10 +99,11 @@ export const updateProduct = async (req, res) => {
     }
 };
 
-// Delete a product (Replaced findByIdAndDelete with findOneAndDelete)
+
+// Delete a product
 export const deleteProduct = async (req, res) => {
     try {
-        const product = await Product.findOneAndDelete({ productId: req.params.productId });
+        const product = await Product.findByIdAndDelete(req.params.productId);
         if (!product) {
             return res.status(404).json({ success: false, message: 'Product not found' });
         }
