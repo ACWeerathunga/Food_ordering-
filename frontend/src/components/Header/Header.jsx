@@ -8,7 +8,7 @@ function Header() {
       <dev className="header-content">
         
         <h2>Order Your Favourite Food Here</h2>
-        <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.Our mission is to satisfy your cravings and elevate your dining experience,one delicious meal at a time. </p>
+        <p>Discover a diverse menu featuring a delectable selection of dishes, expertly crafted with the finest ingredients. Our mission is to satisfy your cravings and enhance your food experience, one delicious meal at a time. </p>
         <button>View Menu</button>
       </dev>
     </div>

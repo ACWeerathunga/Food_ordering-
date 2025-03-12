@@ -6,7 +6,7 @@
 
 .cart-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .cart-content {
@@ -23,7 +23,7 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   font-weight: bold;
   padding: 10px 0;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #e2dede;
   color: #49557E;
   font-size: max(1vw, 12px);
 }
@@ -40,12 +40,12 @@
 .cart-item-details {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 .cart-item-image {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: 5px;
 }

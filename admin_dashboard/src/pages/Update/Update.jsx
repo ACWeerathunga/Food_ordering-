@@ -7,9 +7,8 @@ import './Update.css';
 const categories = [
     "Salad",
     "Rolls",
-    "Deserts",
-    "Sandwich",
-    "Cake",
+    "Rice",
+    "Kottu",
     "Pure Veg",
     "Pasta",
     "Noodles"

@@ -1,8 +1,8 @@
 .header {
   height: 34vw;
   margin: 55px auto;
-  background-image: url('../../assets/header_img.png'); /* Adjust the path */
-  background-size: cover; /* or 'contain' based on your need */
+  background-image: url('../../assets/header_img.png'); 
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   position: relative;

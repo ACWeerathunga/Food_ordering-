@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext';
 import { FaTrash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { assets } from '../../assets/assets'; // Add this import for the icons
+import { assets } from '../../assets/assets'; 
 
 const Cart = () => {
   const { cartItems, addToCart, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
@@ -29,7 +29,7 @@ const Cart = () => {
     fetchFoods();
   }, []);
 
-  const deliveryFee = 2;
+  const deliveryFee = 250;
   const subtotal = getTotalCartAmount();
   const total = subtotal + deliveryFee;
 
@@ -80,7 +80,7 @@ const Cart = () => {
                             className='cart-counter-icon'
                           />
                         </div>
-                        <p className='cart-item-total'>₹{(item.price * cartItems[item._id]).toFixed(2)}</p>
+                        <p className='cart-item-total'>RS:{(item.price * cartItems[item._id]).toFixed(2)}</p>
                         <button 
                           onClick={() => removeFromCart(item._id)} 
                           className='cart-item-remove'

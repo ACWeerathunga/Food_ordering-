@@ -35,15 +35,7 @@ const FoodItem = ({ id, name, description, price, image }) => {
 
 
 
-        {/* // ?<img className='add' onClick={()=>setItemCount(prev=>prev+1)} src={assets.add_icon_white} alt="" />
-          //!cartItems[id]
-         // ?<img className='add' src={assets.add_icon_white} alt="" onClick={()=>addToCart(id)} />
-          :<div className='food-item-counter'>
-            <img onClick={()=>setItemCount(prev=>prev-1)} src={assets.remove_icon_red} alt="" />
-            <p>{itemCount}</p>
-            <img onClick={()=>setItemCount(prev=>prev+1)} src={assets.add_icon_green} alt="" />
-            {/* 
-        } */}
+ 
       </div>
       <div className="food-item-info">
         <div className="food-item-name-rating">

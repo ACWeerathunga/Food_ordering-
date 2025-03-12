@@ -1,6 +1,6 @@
 .orders-container {
-  max-width: 1400px; /* Increased width for better space utilization */
-  margin: 50px auto; /* Reduced top margin to decrease height */
+  max-width: 1400px; 
+  margin: 50px auto; 
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Reduced to decrease height */
+  margin-bottom: 20px;
   padding: 15px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;

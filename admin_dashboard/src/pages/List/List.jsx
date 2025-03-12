@@ -13,7 +13,7 @@ const List = ({ url }) => {
 
   const fetchList = async () => {
     try {
-      const response = await axios.get(`${url}/api/products/`); // Fixed template literal
+      const response = await axios.get(`${url}/api/products/`); 
 
       if (response.data.success) {
         setList(response.data.products);

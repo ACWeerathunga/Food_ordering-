@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './LoginPopup.css';
 import { assets } from '../../assets/assets';
 
+
 const LoginPopup = ({ setShowLogin }) => {
   const [currState, setCurrState] = useState("Login");
 
@@ -40,5 +41,5 @@ const LoginPopup = ({ setShowLogin }) => {
   );
 };
 
-// Ensure this line is correctly placed at the end of the file
+
 export default LoginPopup;
